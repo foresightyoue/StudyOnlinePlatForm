@@ -23,9 +23,9 @@
 	<bean name="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
 		init-method="init" destroy-method="close">
 		<!-- 数据库连接基础信息 -->
-		<property name="url" value="jdbc:mysql://139.199.82.213:3306/mineronline?characterEncoding=utf8&amp;useSSL=true" />
-		<property name="username" value="xxxxxxxx" />
-		<property name="password" value="xxxxx" />
+		<property name="url" value="jdbc:mysql://192.168.3.2:3306/mineronline?characterEncoding=utf8&amp;useSSL=true" />
+		<property name="username" value="root" />
+		<property name="password" value="root" />
 
 		<!-- 初始化连接大小 -->
 		<property name="initialSize" value="0" />
@@ -37,7 +37,7 @@
 		<property name="maxWait" value="60000" />
 
 		<!-- 是否缓存preparedStatement，也就是PSCache。PSCache对支持游标的数据库性能提升巨大，比如说oracle。在mysql下建议关闭。 -->
-		<!-- <property name="poolPreparedStatements" value="true" /> <property 
+		<!-- <property name="poolPreparedStatements" value="true" /> <property
 			name="maxPoolPreparedStatementPerConnectionSize" value="33" /> -->
 
 		<!-- 验证数据库连接有效性，要求查询语句 -->
